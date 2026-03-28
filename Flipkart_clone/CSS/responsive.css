@@ -1,0 +1,120 @@
+/* 
+   TABLET  (max 1024px)
+ */
+@media screen and (max-width: 1024px) {
+
+    nav {
+        height: auto;
+        padding: 10px 16px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo-box {
+        order: 1;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .search {
+        order: 2;
+        flex: 1;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .slider img {
+        height: 220px;
+    }
+
+    .card-item {
+        min-width: 145px;
+        max-width: 145px;
+    }
+
+    .card-img-wrap {
+        height: 115px;
+    }
+}
+
+/* 
+   MOBILE  (max 640px)
+ */
+@media screen and (max-width: 640px) {
+
+    nav {
+        padding: 8px 12px;
+        gap: 8px;
+    }
+
+    .logo-box {
+        order: 1;
+    }
+
+    .search {
+        order: 3;
+        width: 100%;
+        flex: unset;
+    }
+
+    .nav-links {
+        order: 2;
+        width: auto;
+        margin-left: auto;
+        gap: 2px;
+    }
+
+    /* Hide "Become a Seller" on small screens */
+    .nav-btn-outline {
+        display: none;
+    }
+
+    .nav-btn,
+    .nav-icon-btn {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 8px 8px 16px;
+    }
+
+    .slider img {
+        height: 160px;
+    }
+
+    .card {
+        padding: 14px 12px 4px;
+    }
+
+    .card h2 {
+        font-size: 17px;
+    }
+
+    .card-item {
+        min-width: 130px;
+        max-width: 130px;
+    }
+
+    .card-img-wrap {
+        height: 100px;
+    }
+
+    .item-name {
+        font-size: 13px;
+    }
+
+    .item-offer {
+        font-size: 12px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        padding: 24px 20px 16px;
+        gap: 20px;
+    }
+}
