@@ -20,7 +20,7 @@
 
 body {
     /* background-color: var(--main-bg-color); */
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -47,6 +47,11 @@ nav {
     cursor: pointer;
     align-items: last baseline;
     gap: 2px;
+
+}
+
+.logo-box:hover{
+    outline: 1px solid var(--white);
 }
 
 .logo-text {
@@ -67,24 +72,112 @@ nav {
     align-items: center;
     flex: 1;
     margin: 0 15px;
+
 }
 
 .search input {
     flex: 1;
     padding: 0 10px;
     border: none;
-    border-radius: 3px;
-    font-family: 'roboto', sans-serif ;
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Roboto', sans-serif;
+    height: 32px;
 }
 
 .search-btn {
-    width: 25px;
+    width: 32px;
     cursor: pointer;
+    height: 32px;
+    border: none;
 }
 
 /* Login & cart */
-.nav-links{
+.nav-links {
     display: flex;
     list-style: none;
     gap: 15px;
+    color: var(--white);
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.top-text{
+    font-size: 12px;
+}
+
+.bottom-text{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav-item:hover{
+    outline: 1px solid var(--white);
+}
+
+/* Footer */
+footer{
+     background-color: var(--main-bg-hover);
+    color: var(--white);
+     font-family: 'Roboto', sans-serif;
+}
+
+.upper-footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+
+.footer-col h4{
+  font-size: 19px;
+  font-weight: bolder;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.footer-col a{
+    display: block;
+    text-decoration: none;
+    color: #DDD;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.footer-col a:hover{
+    text-decoration:underline;
+}
+
+.lower-footer{
+    background-color: var(--main-bg-color);
+    font-family: 'Roboto', sans-serif;
+   text-align: center;
+}
+
+.lower-row ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.lower-row a{
+    color:#DDD ;
+    text-decoration: none;
+}
+
+.lower-copy{
+  color:#DDD ;
+    text-decoration: none;   
+    font-size: 12px;
+}
+
+.lower-row a:hover{
+    text-decoration: underline;
 }
