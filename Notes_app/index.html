@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Top Navbar ===== -->
+    <nav class="navbar">
+        <h1 class="navbar-title">My Notes</h1>
+    </nav>
+
+    <div class="container">
+
+        <!-- ===== Note Form (for adding / editing a note) ===== -->
+        <div class="note-form-card">
+            <h2 id="formHeading">Add a New Note</h2>
+
+            <input type="text" id="titleInput" placeholder="Note title..." maxlength="50">
+
+            <textarea id="contentInput" placeholder="Write your note here... (Ctrl + Enter to save)" maxlength="300" rows="4"></textarea>
+
+            <!-- Character counter -->
+            <p id="charCount">0 / 300 characters</p>
+
+            <div class="form-buttons">
+                <button id="saveBtn" onclick="saveNote()">Save Note</button>
+                <button id="cancelEditBtn" onclick="cancelEdit()" style="display:none;">Cancel</button>
+            </div>
+        </div>
+
+        <!-- ===== Search Bar ===== -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search notes..." onkeyup="renderNotes()">
+        </div>
+
+        <!-- ===== Empty State (shown when there are no notes) ===== -->
+        <div id="emptyState" class="empty-state">
+            <p>No notes yet. Start by adding your first note above!</p>
+        </div>
+
+        <!-- ===== Notes Grid (all note cards go here) ===== -->
+        <div class="notes-grid" id="notesGrid"></div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with HTML, CSS &amp; JavaScript</p>
+    </footer>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
+</body>
+</html>
